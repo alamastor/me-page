@@ -4,6 +4,22 @@ body {
   background-color: #fffaf0;
 }
 
+main {
+  max-width: 1000px;
+}
+
+@media (min-width: 600px) {
+  main {
+    margin: 0 2em;
+  }
+}
+
+@media (min-width: 1000px) {
+  main {
+    margin: 0 auto;
+  }
+}
+
 h1 {
   font-family: "Merriweather", serif;
   font-size: 4em;
@@ -17,5 +33,18 @@ a:visited {
 }
 
 .project {
-  margin-bottom: 3em;
+  background-color: #ede6d8;
+  box-shadow: 0 2px 4px 0 #928a7a;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  border-radius: 4px;
+}
+@media (min-width: 600px) {
+  .project {
+    margin-bottom: 2em;
+  }
+}
+
+.project--header {
+  margin-top: 0;
 }
